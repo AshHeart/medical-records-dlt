@@ -1,0 +1,26 @@
+{
+  "name": "medical-records-dlt",
+  "version": "1.0.0",
+  "description": "An implementation of the blockchain and distributed ledger technology to store medical records of patients.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -d",
+    "build": "node -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshHeart/medical-records-dlt.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "DLT",
+    "Javascript"
+  ],
+  "author": "AshHeart",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AshHeart/medical-records-dlt/issues"
+  },
+  "homepage": "https://github.com/AshHeart/medical-records-dlt#readme"
+}
