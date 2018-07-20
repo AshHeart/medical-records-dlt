@@ -10,6 +10,7 @@ There are three types of nodes that will interact with and make up the network v
 * The Doctors
 * The Nurses
 * The Admins
+
 For detailed descriptions and roles of each of them refer the file `ACTORS.md`.
 
 ### Data on BlockChains
