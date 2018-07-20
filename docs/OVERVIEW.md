@@ -13,5 +13,12 @@ There are three types of nodes that will interact with and make up the network v
 
 For detailed descriptions and roles of each of them refer the file `ACTORS.md`.
 
-### Data on BlockChains
-For detailed information about data stored on the chains refer files inside `docs/blockchain` folder..
+### Data on the Blockchain
+For detailed information about data stored on the chains refer files inside `docs/blockchain` folder.
+
+### Permissions
+Permissions are given to the user based on their role in the business or institution. An actor can interact with the blockchain based on the permissions given to them. Permissions are pre-specified and are enforced throughout the app and for the most part should not be changed.
+For detailed list of permissions given to each actor in the network, see `PERMISSIONS.md`.
+
+### The API, Front-end and P2P Network
+The API used, the front-end decisions and implementation of the peer-to-peer network are detailed in respective folders and files in `docs` folder.
