@@ -21,8 +21,13 @@ We only accept javascript written without semicolons, if you find your C or Java
 
 ### JS Syntax
 * Variable names will be in lowercase with words separated by _.   
-Eg: ``` let new_order = "Something" ```
-* Keep variable names concise and meaningful.
+  ``` javascript 
+  let new_order = "Something" 
+  ```
+* Keep variable names concise and meaningful. Please ``don't`` name your variables:
+  ``` javascript
+  let this_one_does_this_thing_and_this_other_thing_too = "All those things.... I guess"
+  
 * Blocks within a block or global blocks must look like:
   ``` javascript 
   function add() {
@@ -58,5 +63,36 @@ Eg: ``` let new_order = "Something" ```
       {
           //Code..
       }
+  }
+  ```
+* Function and method names must follow camel case starting with a lowercase letter.
+  ``` javascript
+  function addNewOrder() { 
+    //Code.. 
+  }
+  ```
+* Function chaining will be on a new line if chaining more than two functions:
+  ``` javascript
+  Thing.doSomething()
+    .doSomethingElse()
+      .doSomeOtherThing()
+  ```
+  or if it is just a sinlge dot, it can be on the same line:
+  ``` javascript
+  Thing.DoNewThing()
+  ```
+  promise.then and promise.catch should be on the next line and indented:
+  ``` javascript
+  somePromise('firstArg', SomeCallback)
+    .then(SomeThing)
+    .then(SomeThingElse)
+    .catch(SomeOtherThing)
+  ```
+* Structure your objects neatly like:
+  ``` javascript
+  let myObj = {
+    prop1:                  someDodad,
+    prop2:                  someOtherDodad,
+    prop3_has_a_large_name: 10000
   }
   ```
