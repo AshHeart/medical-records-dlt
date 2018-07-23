@@ -9,7 +9,7 @@
  * @copyright (c) 2018 Ashweyth Sunil
  */
 
-const SHA3 = require('crypto-js/sha3')
+const MD5 = require('crypto-js/md5')
 
 /**
  * @class Defines a transaction to add a new patient's details
@@ -37,7 +37,7 @@ class AddNewPatient
     }
 
     /**
-     * Generates a patient id for a new patient using SHA3 with their 
+     * Generates a patient id for a new patient using MD5 with their 
      * name, age and sex as the key
      * 
      * @param {string} name Name of the patient
@@ -48,12 +48,17 @@ class AddNewPatient
      */
     getPatientID(name, age, sex)
     {
-        let newID = ""
-        let newHash = SHA3(name + age + sex).toString()
+        let newHash = MD5(name + age + sex).toString()
+	    let newID = ""
 
-        newID = "PID_" + newHash
+	    for(let i = 1, j = 0; i < newHash.length - 8; ++i) {
+		    if(i % 4 == 0) {
+			    newID += "_" + newHash.slice(j, i)
+			    j = i
+		    }
+	    }
 
-        return newID
+	    return "PID" + newID
     }
 }
 
