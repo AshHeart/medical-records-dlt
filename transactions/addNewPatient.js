@@ -53,9 +53,9 @@ class AddNewPatient
 
 	    for(let i = 1, j = 0; i < newHash.length - 8; ++i) {
 		    if(i % 4 == 0) {
-			    newID += "_" + newHash.slice(j, i)
+		        newID += "_" + newHash.slice(j, i)
 			    j = i
-		    }
+            } 
 	    }
 
 	    return "PID" + newID
