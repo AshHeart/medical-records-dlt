@@ -39,7 +39,7 @@ class PatientDetailsBlockchain
     addBlock(block)
     {
         if(this.blocks.length == 0) {
-            block.previousHash = "000000000000000",
+            block.previousHash = "0000000000000000000000000000000000000000000000000000000000000000",
             block.hash = this.generatehash(block)
         }
 
